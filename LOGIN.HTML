@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="d-flex justify-content-between">
-        <h1 class="text-info m-3">Welcome</h1>
+        <h1 id="head" class="text-info m-3">Welcome User</h1>
         <button class="btn btn-danger m-3 p-2">logout</button>
     </div>
     <h1 class="text-primary text-center m-4 p-3">Employee Details</h1>
@@ -19,11 +19,19 @@
             <img src="https://img.freepik.com/free-vector/cartoon-working-day-scenes-set_23-2148953089.jpg" class="m-3 p-4 mt-5" alt="img" height="580px" width="100%">
         </div>
         
-        <div class="col-4 bg-info">
+        <div class="col-4 bg-info container text-center ">
+            <input type="text" class="form-control my-2 mt-4" id="Id" placeholder="Id"><br>
+            <input type="text" class="form-control "  id="empname" placeholder="Name"><br>
+            <input type="text" class="form-control my-2"  id="address" placeholder="Address"><br>
+            <input type="text" class="form-control "  id="position" placeholder="position"><br>
+            <input type="text" class="form-control my-2"  id="experience" placeholder="experience"><br>
+            <input type="text" class="form-control"  id="salary" placeholder="salary"><br>
+            <button onclick="addemployee()" class="btn btn-dark ">Add Employee</button>
         </div>
         <div class="col-4 p-3 ">
-            <input type="text" placeholder="search" class="form-control mt-5">
-            <button class="btn btn-primary my-3">Search</button>
+            <input type="text" placeholder="search" class="form-control mt-5 " id="emp">
+            <button class="btn btn-primary my-3" onclick="search()">Search</button>
+            <div id="card"></div>
         </div>
     </div>
     <script src="login.js"></script>
